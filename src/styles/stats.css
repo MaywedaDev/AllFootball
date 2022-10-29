@@ -1,0 +1,127 @@
+/*This stylesheet belongs to the stats page*/
+
+.stats .team-logo img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.stats .stats-header{
+    margin: 20px 10px;
+}
+
+.stats .team-logo{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.stats .league-data .league .imgbox{
+    height: 35px;
+    width: 35px;
+}
+
+.stats label{
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.stats .imgbox img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.stats td{
+    vertical-align: middle;
+    border-bottom: 2px solid var(--bd-color-2);
+    min-width: 30px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.stats .team{
+    vertical-align: baseline;
+    text-align: start;
+    width: 270px;
+}
+
+.stats .league-data{
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: var(--bx-sdw);
+    max-width: 810px;
+    width: 90%;
+    position: relative;
+    overflow-x: scroll;
+    margin: 20px auto;
+    background-color: var(--primary);
+}
+
+.stats .team span{
+    margin: 0 15px;
+    display: inline-block;
+    height: 100%;
+    transform: translateY(-5px);
+}
+
+.stats table{
+    margin-top: 55px;
+    border-collapse: collapse;
+    border-spacing: none;
+    padding: 15px;
+    min-width: 770px;
+}
+
+.stats .league{
+    background-color: #3f1052;
+    position: absolute;
+    left: 0;
+    width: 810px;
+    top: 0;
+    height: 65px;
+    color: var(--primary);
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.stats .select{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stats .select select{
+    border: none;
+    box-shadow: var(--bx-sdw);
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.stats tr.ucl, #col-ucl{
+    background-color: var(--btn-hover-colour);
+}
+
+.stats tr.uel, #col-uel{
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+.stats #col-ucl, #col-uel{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+} 
+
+.stats #comp{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px){
+    .select{
+        flex-direction: column;
+        align-items: center;
+    }
+}

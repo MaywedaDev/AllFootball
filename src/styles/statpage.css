@@ -1,0 +1,130 @@
+/*This stylesheet belongs to the statpage component*/
+
+.statspage{
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.statspage::after{
+    position: absolute;
+    content: '*Data as of 30th of September 2022';
+    bottom: 0;
+    right: 10px;
+    color: var(--secondary);
+    font-size: 0.7em;
+}
+
+
+.statspage .header-info{
+	position: absolute;
+	top: 15px;
+	width: calc(100% - 20px);
+	left: 10px;
+	background-color: var(--secondary);
+	padding-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: var(--bx-sdw);
+}
+
+.statspage .header-info h2{
+	/*display: none;*/
+	box-shadow: none;
+}
+
+.statspage .bio{
+    display: flex;
+    max-width: 100%;
+}
+
+.statspage .bio .imgbox{
+    border-right: 2px solid var(--bd-color-2);
+    min-width: 40%;
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.statspage .bio .imgbox img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto 0;
+    border: 7px solid rgba(255, 255, 255, 0.4);
+    box-shadow: var(--bx-sdw);
+}
+
+.statspage .bio .about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 0 25px;
+}
+
+.statspage .bio .about .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.statspage .bio .about .info li{
+    /*flex: 1 1 280px;*/
+    min-width: 280px;
+    /*padding: 15px 0;*/
+    list-style-type: square;
+    color: var(--secondary);
+    
+}
+
+.statspage .bio .about .stats{
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.statspage .bio .about .stats table{
+    min-width: 500px;
+}
+
+.statspage .bio .about .stats table thead{
+    color: var(--secondary);
+    font-size: 0.8em;
+}
+
+.statspage .bio .about .stats table .comp{
+    font-weight: 700;
+    border-right: 2px solid var(--bd-color-2);
+}
+
+.statspage .bio .about .info li span{
+    font-size: 0.7em;
+}
+
+.statspage .bio .about .info li p{
+    color: #000;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .statspage .bio{
+        flex-direction: column;
+    }
+
+    .statspage .bio .imgbox{
+        border-right: none;
+        border-bottom: 2px solid var(--bd-color-2);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .statspage .bio .about{
+        width: 100%;
+    }
+
+}

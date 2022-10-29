@@ -1,0 +1,61 @@
+/*This stylesheet belongs to the footer component*/
+
+.footer{
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 30px 20px;
+    position: relative;
+}
+
+.footer .lists{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer .lists div > *, .footer .lists ul > *{
+    margin-bottom: 15px;
+}
+
+.footer .lists .socials ul{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .lists ul li{
+    font-size: 0.9em;
+}
+
+.footer .lists .socials ul li{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--secondary);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .lists li{
+    list-style: none;
+}
+
+.footer .lists li a{
+    color: currentColor;
+}
+
+.dev{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .footer .lists{
+        flex-direction: column;
+    }
+}

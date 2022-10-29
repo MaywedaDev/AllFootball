@@ -1,0 +1,137 @@
+/*This stylesheet belongs to the match page*/
+
+#match-page {
+    padding: 10px;
+}
+
+#match-page .match{
+    max-width: 640px;
+    margin: 30px auto;
+    box-shadow: var(--bx-sdw);
+    border-radius: 5px;
+    padding: 30px 20px;
+    background-color: var(--primary);
+}
+
+
+#match-page .match .overview .comp{
+    display: flex;
+    gap: 5px;
+    color: var(--link-text);
+}
+
+#match-page .match .overview .comp #league{
+    color: var(--secondary);
+}
+
+#match-page .match .overview .comp p{
+ margin-left: auto;
+}
+
+#match-page .match .overview .scores .teams{
+    display: flex;
+    gap: 15%;
+    margin: 0 auto;
+}
+
+#match-page .match .overview .scores .teams .home, #match-page .match .overview .scores .teams .away, #match-page .match .overview .scores .teams .stroke{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+#match-page .match .overview .scores .teams .home p, #match-page .match .overview .scores .teams .away p{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--link-text);
+}
+
+#match-page .match .overview .scores .teams .home .club, #match-page .match .overview .scores .teams .away .club {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#match-page .match .overview .scores .teams img{
+    max-width: auto;
+    height: 2.5em;
+}
+
+#match-page .match .overview .events{
+    padding: 15px 0;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#match-page .match .switch-bar{
+    display: flex;
+    border-top: 1px solid rgba(197, 198, 208, 0.6);
+    border-bottom: 1px solid rgba(197, 198, 208, 0.6);
+    margin: 0 -20px;
+}
+
+#match-page .match .switch-bar .tab{
+    padding: 15px 0;
+    width: 50%;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--link-text);
+    position: relative;
+}
+
+#match-page .match .switch-bar .tab.active::before{
+    content: '';
+	background-color: var(--secondary);
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	z-index: 30;
+	bottom: 0;
+	left: 0;
+}
+
+#match-page .match .stats{
+    padding: 0 5px;
+}
+
+#match-page .match .stats .stats-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#match-page .match .stats .stats-header img{
+    max-height: 1.5em;
+}
+
+#match-page .match .stats .stats-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+#match-page .match .stats .stats-body li{
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#match-page .match .lineups{
+    min-width: 100%;
+    margin: 0 -20px;
+}
+
+#match-page .match .lineups img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px){
+    #match-page .match .overview .scores .teams .home p, #match-page .match .overview .scores .teams .away p{
+        font-size: 0.7em;
+        white-space: nowrap;
+    }
+
+    #match-page .match .overview .comp p{
+        display: none;
+       }
+}

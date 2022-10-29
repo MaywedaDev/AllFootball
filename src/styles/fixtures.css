@@ -1,0 +1,84 @@
+/*This stylesheet belongs to the fixtures page*/
+.fixtures {
+    position: relative;
+}
+
+.fixtures .react-calendar{
+    position: absolute;
+    top: 110px;
+    right: 2%;
+    width: 35%;
+    max-width: 350px;
+    border: none;
+    box-shadow: var(--bx-sdw);
+    border-radius: 5px;
+}
+
+.fixtures .react-calendar__tile--active{
+    background: var(--secondary);
+}
+
+.fixtures .scores{
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+    position: relative;
+}
+
+.fixtures .scores > *{
+	margin-top: 0;
+}
+
+.fixtures .scores .header-info {
+    position: absolute;
+    top: 15px;
+    width: calc(100% - 20px);
+    left: 10px;
+    background-color: var(--secondary);
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: var(--bx-sdw);
+}
+
+.fixtures .scores .header-info h2{
+    box-shadow: none;
+}
+
+.fixtures .scores .header-info h3 {
+    display: block;
+    padding: 0 10px;
+    color: var(--primary);
+    position: relative;
+}
+
+.fixtures .scores .header-info h3:before {
+    content: "";
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 1px;
+}
+
+.fixtures .scores .match-list{
+    margin-top: 110px;
+    width: 60%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .fixtures .react-calendar{
+        display: none;
+    }
+
+    .fixtures .scores .match-list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fixtures .scores .match-list{
+        margin-top: 130px;
+    }
+}
