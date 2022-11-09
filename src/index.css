@@ -150,6 +150,7 @@ body{
 	width: 20%;
 	height: 100%;
 	transition: all 0.7s ease-out;
+	position: relative;
 }
 
 .main-content .slider .slides .imgbox img{
@@ -948,6 +949,15 @@ body{
 
 	.main-content .slider{
 		height: 100%;
+	}
+
+	.main-content .slider .slides .imgbox::before{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: #000;
+		opacity: 0.6;
 	}
 
 	.navbar .links li:hover a::before{

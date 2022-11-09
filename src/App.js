@@ -12,6 +12,7 @@ import ClubStats from './ClubStats';
 import NotFound from './NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Match from './Match';
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar active={page} />
 

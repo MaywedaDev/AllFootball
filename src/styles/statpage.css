@@ -112,6 +112,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .statspage{
+        padding-bottom: 20px;
+    }
+
     .statspage .bio{
         flex-direction: column;
     }

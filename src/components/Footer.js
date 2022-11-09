@@ -44,9 +44,9 @@ function Footer() {
                 <h4>FOLLOW ME</h4>
                 <ul>
                     <li><a href="https://twitter.com/playermayweda7"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                    <li><a href="https://github.com/MaywedaDev"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                    <li><a href="https://facebook.com/profile.php?id=100010444267704"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-                    <li><a href="https://www.linkedin.com/in/enyo-onuche-37b124245/"><FontAwesomeIcon icon={faGithub}/></a></li>
+                    <li><a href="https://facebook.com/profile.php?id=100010444267704"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                    <li><a href="https://www.linkedin.com/in/enyo-onuche-37b124245/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                    <li><a href="https://github.com/MaywedaDev"><FontAwesomeIcon icon={faGithub}/></a></li>
                 </ul>
             </div>
         </div>
